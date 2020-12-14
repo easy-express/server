@@ -27,10 +27,12 @@ export class EasyExpressServer {
   }
 
   // starts the app and runs on given port
-  start() {
-    this.app.listen({ port: process.env.PORT || DEFAULT_PORT }, () =>
-      console.log(`Server ready ✅ Listening on port ` + process.env.PORT || DEFAULT_PORT),
-    );
+  start(port?: number) {
+    if (port === undefined) {
+      port = process.env.PORT !== undefined ? Number(process.env.PORT) : DEFAULT_PORT;
+    }
+
+    this.app.listen({ port }, () => console.log(`✅ Server listening on port ` + port));
   }
 
   // adds the module to this server.
