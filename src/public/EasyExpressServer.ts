@@ -16,7 +16,7 @@ export class EasyExpressServer {
   }
 
   // Returns an express application with basic settings.
-  createExpressApp() {
+  private createExpressApp() {
     const expressApp = express();
     expressApp.use(express.json({ limit: '50mb' }));
     expressApp.use(express.urlencoded({ limit: '50mb' }));
@@ -25,7 +25,7 @@ export class EasyExpressServer {
   }
 
   // starts the app and runs on given port
-  start(port?: number) {
+  public start(port?: number) {
     if (port === undefined) {
       port = process.env.PORT !== undefined ? Number(process.env.PORT) : DEFAULT_PORT;
     }
@@ -35,7 +35,7 @@ export class EasyExpressServer {
 
   // adds the module to this server.
   // It should be an attachable module
-  addModule(module: IEasyExpressModule) {
+  public addModule(module: IEasyExpressModule) {
     module.attachTo(this);
   }
 }
