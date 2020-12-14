@@ -19,7 +19,7 @@ export class EasyExpressServer {
 
   // Returns an express application with basic settings.
   createExpressApp() {
-    let expressApp = express();
+    const expressApp = express();
     expressApp.use(express.json({ limit: '50mb' }));
     expressApp.use(express.urlencoded({ limit: '50mb' }));
     expressApp.use(cors());
