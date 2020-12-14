@@ -1,0 +1,41 @@
+{
+  "name": "@easy-express/server",
+  "version": "1.0.3",
+  "description": "An easy to use express server in Typescript.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:leonardparisi/easy-express-sequelize.git"
+  },
+  "keywords": [
+    "express",
+    "typescript"
+  ],
+  "author": "Leonard Parisi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardparisi/easy-express-server/issues"
+  },
+  "homepage": "https://github.com/leonardparisi/easy-express-server#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.3"
+  }
+}
