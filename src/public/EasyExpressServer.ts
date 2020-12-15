@@ -33,9 +33,8 @@ export class EasyExpressServer {
     this.instance.listen({ port }, () => console.log(`✅ Server listening on port ` + port));
   }
 
-  // adds the module to this server.
-  // It should be an attachable module
-  public addModule(module: IEasyExpressAttachableModule) {
-    module.attachTo(this);
+  // attaches the given module to this server
+  public attachModule(module: IEasyExpressAttachableModule): Promise<unknown> {
+    return module.attachTo(this);
   }
 }
