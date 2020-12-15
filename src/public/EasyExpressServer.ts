@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import { IEasyExpressModule } from '../IEasyExpressModule';
+import { IEasyExpressAttachableModule } from './IEasyExpressAttachableModule';
 
 const DEFAULT_PORT = 8000;
 
@@ -35,7 +36,7 @@ export class EasyExpressServer {
 
   // adds the module to this server.
   // It should be an attachable module
-  public addModule(module: IEasyExpressModule) {
+  public addModule(module: IEasyExpressAttachableModule) {
     module.attachTo(this);
   }
 }

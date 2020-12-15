@@ -1,4 +1,2 @@
 // To avoid circular references
-export interface IEasyExpressModule {
-  attachTo(x: unknown): void;
-}
+export interface IEasyExpressModule {}
