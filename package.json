@@ -1,6 +1,6 @@
 {
   "name": "@easy-express/server",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "An easy to use express server in Typescript.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
