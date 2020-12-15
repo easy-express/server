@@ -1,6 +1,5 @@
 import cors from 'cors';
 import express from 'express';
-import { IEasyExpressModule } from '../IEasyExpressModule';
 import { IEasyExpressAttachableModule } from './IEasyExpressAttachableModule';
 
 const DEFAULT_PORT = 8000;
