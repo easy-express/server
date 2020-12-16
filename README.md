@@ -10,7 +10,7 @@
 
 > A simple, customizable, and extensible express server in Typescript.
 
-### 🏠 [Homepage](https://github.com/easy-express/easy-express-server/#readme)
+### 🏠 [Homepage](https://github.com/easy-express/server/#readme)
 
 ## Introduction
 
@@ -62,7 +62,7 @@ Coming soon...
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/easy-express/easy-express-server/issues). You can also take a look at the [contributing guide](https://github.com/easy-express/easy-express-server/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/easy-express/server/issues). You can also take a look at the [contributing guide](https://github.com/easy-express/server/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
